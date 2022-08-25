@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+/* nav-section */
+
+
+#nav-section{
+    padding: 1em 10em;
+    background-color: white;
+    color: green;
+}
+
+.nav-bar-css{
+    margin-right: 10em;
+    color:green;
+}
+.nav-bar-css > li{
+    margin-right: 2em;
+}
+.nav-bar-css > li > a{
+    color: #051977;
+}
+.nav-bar-css > li > a:hover{
+    color: yellow;
+}
+
+
+
+
+/* jumbotron-section */
+
+#jumbotron{
+    background: url('img/bg-home.jpg');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    padding:4rem 0;
+    height:40rem;
+}
+.jumbo{
+    font-size: 400%;
+    color: #051952;
+    margin-top:4rem ;
+    margin-bottom:4rem ;
+}
+.jumbo-p{
+    font-size:170%;
+    color: #051952;
+    margin-bottom:4rem;
+}
+
+
+
+
+/* carousel-section */
+
+.caro{
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 200px;
+    height: 150px;
+    margin-left: 2rem;
+}
