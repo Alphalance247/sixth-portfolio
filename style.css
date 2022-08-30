@@ -258,14 +258,16 @@ body{
 }
 
 /* carousel-new-section */
-
+#carousel-new{
+    text-align: center;
+}
 #carousel-new hr{
     width: 10%;
     text-align: start;
     background: yellow;
     border-width: .4em;
 }
-#carousel-new .new-carousel{
+.carousel-encapsulation{
     display: grid;
     grid-template-columns: 1fr auto;
     width: 80%;
@@ -274,7 +276,7 @@ body{
 }
 #carousel-new .first{
     font-size: 1.7em;
-    color: #828282;
+    color: #787878;
     width: 80%;
 }
 .carousel-new-text h3{
@@ -302,9 +304,6 @@ body{
 }
 .design-text p{
     margin-top: -.7em;
-}
-.design-text h3{
-    color: #051952;
 }
 .new-sect{
     display: flex;
