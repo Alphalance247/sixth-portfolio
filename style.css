@@ -1,4 +1,4 @@
-body{
+*{
     margin: 0;
     padding: 0;
 }
@@ -225,11 +225,6 @@ body{
 .count-text h2{
     color: white;
 }
-/* hr{
-    color: blue;
-    width: 5%;
-    transform: rotate(90deg);
-} */
 
 /* courses-display */
 
@@ -259,7 +254,11 @@ body{
 
 /* carousel-new-section */
 #carousel-new{
-    text-align: center;
+    background: #fafafa;
+    overflow: hidden;
+}
+#carousel-new button{
+    display: none;
 }
 #carousel-new hr{
     width: 10%;
@@ -270,9 +269,12 @@ body{
 .carousel-encapsulation{
     display: grid;
     grid-template-columns: 1fr auto;
-    width: 80%;
+    width: 95%;
     margin: auto;
-    grid-gap: 3em;
+    grid-gap: 5em;
+    padding-left: 7em;
+    padding-top: 5em;
+    height: 500px;
 }
 #carousel-new .first{
     font-size: 1.7em;
@@ -282,6 +284,11 @@ body{
 .carousel-new-text h3{
     color: #bdbdbd;
     font-size: 1.3em;
+}
+.carousel-new-text h2{
+    color: #bdbdbd;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 #carousel-new .img-new{
     box-shadow:10px 10px 15px 15px rgba(0, 0, 0, 0.1);
@@ -312,3 +319,209 @@ body{
 
 
 
+/* Events details section */
+
+#event-section{
+    text-align: center;
+}
+#event-section h1{
+    font-size: 12rem;
+    color: #f0f1f5;
+}
+#event-section h3{
+    color: #051952;
+    font-weight: bold;
+    font-size: 2rem;
+    position: relative;
+    bottom: 9rem;
+}
+#event-section p{
+    font-size: 1em;
+    width: 40%;
+    margin: auto;
+    position: relative;
+    bottom: 5rem;
+    color: #a399a1;
+    line-height: 2;
+}
+
+/* event-section2 */
+
+.news-events{
+    display: grid;
+    grid-template-columns:auto 700px;
+    gap: 2rem;
+}
+.caro-all > h4{
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 2em;
+}
+.caro-all{
+    width:95%;
+    margin:0 auto;
+}
+.carousel-encap{
+    width:400px;
+    margin:0 1em;
+    cursor: pointer;
+}
+.carousel-encap:hover{
+    background: white;
+    box-shadow:10px 10px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.carousel-encap img{
+    width: 400px;
+}
+.carousel-text-events{
+    padding:1em 0 .3em .7em;
+    line-height:2;
+    background: white;
+}
+.carousel-text-events h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #051952;
+}
+.carousel-text-events h3:hover{
+    color: goldenrod;
+}
+.carousel-text-events h5{
+    color: #bdbdbd;
+    font-size: 1.3em;
+}
+.carousel-text-events p{
+    color: #bdbdbd;
+}
+.carousel-text-events h6{
+    color: goldenrod;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.carousel-text-events h6:hover{
+    color: #051952;
+}
+
+
+/* textwithoutcarousel */
+.noncarousel-text > h4{
+    font-size: 1rem;
+    color: grey;
+    margin-bottom: 2em;
+}
+.non-carousel-encap{
+    display:grid;
+    grid-template-columns:auto 1fr;
+    grid-gap: 3em;
+    cursor: pointer;
+}
+.non-carousel-encap:hover{
+    background: white;
+    box-shadow:10px 10px 15px 15px rgba(0, 0, 0, 0.1);
+}
+.first-text{
+    background: #051952;
+    width: 130px;
+    height: 150px;
+    text-align: center;
+}
+.first-text h4{
+    color: white;
+    margin-top: 1em;
+}
+.first-text h5{
+    color: goldenrod;
+    font-size: 3em;
+}
+.second-text h3{
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #051952;
+}
+.second-text h3:hover{
+    color: goldenrod;
+}
+.second-text p{
+    color: #bdbdbd;
+}
+.second-text h6{
+    color: goldenrod;
+}
+.second-text h6:hover{
+    color: #031752;
+}
+
+
+
+
+/* contact-section */
+#contact-us{
+    margin:3em 0 0;
+    background: url('img/coll\ 3\ \(1\).jpg');
+    background-position: center;
+    height: 380px;
+    padding: 4rem 0;
+}
+.contact{
+    text-align: center;
+    margin: 4rem;
+}
+.contact-btn{
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+}
+.contact h2{
+    color: yellow;
+    font-size: 3em;
+}
+.contact p{
+    color: white;
+    font-size: 1.5em;
+}
+.contact .btn-cta{
+    color: white;
+}
+
+
+
+/* footer-list */
+
+
+#footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5em 4em;
+    gap: 2em;
+    background: url('img/optin\ \(2\).jpg');
+    color: white;
+}
+.footer-list{
+    line-height: 2;
+}
+.footer-list h4{
+    color: white;
+    margin-bottom: 1em;
+    font-weight: bold;
+}
+.footer-list h5:hover{
+    color: goldenrod;
+}
+.footer-list ul li{
+    color: white;
+    list-style: none;
+    margin-top: 1em;
+}
+.footer-list ul li:hover{
+    color: goldenrod;
+}
+.footer-list p{
+    color: white;
+}
+.footer-text img{
+    margin-bottom: 2em;
+    color: white;
+}
+.footer-text p{
+    line-height: 2;
+}
