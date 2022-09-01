@@ -37,17 +37,17 @@
     background-size: cover;
     text-align: center;
     padding:4rem 0;
-    height:45rem;
+    height:40rem;
     position: relative;
 }
 .jumbo{
-    font-size: 400%;
+    font-size: 4rem;
     color: #051952;
     margin-top:4rem ;
     margin-bottom:4rem ;
 }
 .jumbo-p{
-    font-size:170%;
+    font-size:1.8rem;
     color: #051952;
     margin-bottom:4rem;
 }
@@ -66,14 +66,14 @@
 }
 
 .caro{
-    width: 250px;
-    height: 200px;
+    width: 200px;
+    height: 180px;
     margin-left: 3rem;
     text-align: center;
     border-radius: .5em;
 }
 .caro h2{
-    padding: 3em 1em;
+    padding: 2em 1em;
     color: white;
 }
 
@@ -89,7 +89,7 @@
 }
 #hero h1{
     color:#f0f1f5;
-    font-size: 1200%;
+    font-size: 8rem;
 }
 .hero p{
     color: #8D8E8E;
@@ -136,15 +136,14 @@
 /* showcase-section */
 
 #showcase-section{
-    width: 90%;
+    width: 95%;
     margin: 6rem auto;
-    /* overflow: hidden; */
     background: url('img/bg-row\ \(1\).png');
 }
 .showcase{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    grid-gap:7em;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap:2em;
 }
 .showcase-cover{
     display: grid;
@@ -166,13 +165,15 @@
     background: white;
     box-shadow:10px 10px 15px 15px rgba(0, 0, 0, 0.1);
 }
+
+
 /* showcase-testimonial */
 .showcases-testimonial{
     display: grid;
     grid-template-columns:auto 300px;
 }
 .showcase-testimonial h1{
-    font-size: 15rem;
+    font-size: 8rem;
     color: #f0f1f5;
     text-align: center;
 }
@@ -182,15 +183,17 @@
     font-size: 2rem;
     text-align: center;
     position: relative;
-    bottom: 10rem;
+    bottom: 6.2rem;
 }
 .showcases-testimonial-text{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    height: 200px;
+    gap: 1em;
+    margin-top: 7em;
 }
 .showcases-testimonial-text p{
-    font-size: 1.4em;
+    font-size: 1em;
 }
 .showcase-testimonial .btn-cta:hover{
     background-color:#031752;
@@ -489,12 +492,12 @@
 
 
 #footer{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
     padding: 5em 4em;
     gap: 2em;
     background: url('img/optin\ \(2\).jpg');
     color: white;
+    background-position: center;
+    background-size: cover;
 }
 .footer-list{
     line-height: 2;
@@ -524,4 +527,101 @@
 }
 .footer-text p{
     line-height: 2;
+}
+
+
+
+
+/* tab media query */
+
+
+@media (max-width:990px){
+    #jumbotron{
+        height:40rem;
+    }
+    .jumbo{
+        font-size: 3.5rem;
+        margin-top:3rem ;
+        margin-bottom:3rem ;
+    }
+    .jumbo-p{
+        font-size:1.5rem;
+        margin-bottom:2rem;
+    }
+
+    /* hero-tab */
+
+    #hero h1{
+        color:#f0f1f5;
+        font-size: 4rem;
+    }
+    .hero-text{
+        margin-bottom: 2em;
+    }
+    .hero-img > img{
+        height:400px;
+    }
+     /* showcase-section */
+     
+    #showcase-section .showcase-testimonial .btn-cta{
+        padding: .7em 2em;
+        margin:unset;
+    }
+    .showcases-testimonial-text{
+        gap: unset;
+        margin-top:unset;
+        height: unset;
+    }
+    .showcases-testimonial{
+        display: grid;
+        grid-template-columns:1fr 1fr;
+    }
+    .showcase-testimonial h1{
+        font-size: 4rem;
+    }
+    .showcase-testimonial h3{
+        color: #051952;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: center;
+        position: relative;
+        bottom: 3.8rem;
+    }
+}
+
+
+/* small-media-query */
+@media (max-width:500px){
+    .hero-img > img{
+        height:300px;
+    }
+
+
+
+    /* showcase-section */
+
+    .showcases-testimonial{
+        display: unset;
+    }
+    #showcase-section .showcase-testimonial .btn-cta{
+        padding: .7em 2em;
+        margin:unset;
+    }
+    .showcase-testimonial h1{
+        font-size: 4rem;
+    }
+    .showcase-testimonial h3{
+        font-size: 1.3rem;
+        bottom: 3.8rem;
+    }
+    .showcases-testimonial-text{
+        gap: unset;
+        margin-top:unset;
+        height: unset;
+    }
+    .count{
+        display:flex;
+        text-align: center;
+        gap: 3rem;
+    }
 }
