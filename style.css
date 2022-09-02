@@ -209,16 +209,15 @@
 /* count-down-section */
 #count-down{
     background: url('img/optin\ \(2\).jpg');
-    height: 300px;
-    text-align: center;
-    padding: 10rem 20rem;
     background-position: center;
-    background-size: cover;
+    background-size: cover; 
+    padding:8em 0;
 }
 
 .count{
     display:flex;
     text-align: center;
+    justify-content: center;
     gap: 3rem;
 }
 .count-text h1{
@@ -236,7 +235,7 @@
     text-align: center;
 }
 #courses-display h1{
-    font-size: 12rem;
+    font-size: 10rem;
     color: #f0f1f5;
 }
 #courses-display h3{
@@ -245,10 +244,11 @@
     font-size: 2rem;
     text-align: center;
     position: relative;
-    bottom: 9rem;
+    bottom: 7rem;
+    margin-bottom: 1em;
 }
 #courses-display p{
-    font-size: 1.4em;
+    font-size: 1em;
     width: 60%;
     margin: auto;
     position: relative;
@@ -264,10 +264,10 @@
     display: none;
 }
 #carousel-new hr{
-    width: 10%;
+    width: 7%;
     text-align: start;
     background: yellow;
-    border-width: .4em;
+    border-width: .2em;
 }
 .carousel-encapsulation{
     display: grid;
@@ -275,14 +275,14 @@
     width: 95%;
     margin: auto;
     grid-gap: 5em;
-    padding-left: 7em;
-    padding-top: 5em;
-    height: 500px;
+    padding-left: 5em;
+    padding-top: 3em;
+    height: 450px;
 }
 #carousel-new .first{
-    font-size: 1.7em;
+    font-size: 1.3em;
     color: #787878;
-    width: 80%;
+    width: 70%;
 }
 .carousel-new-text h3{
     color: #bdbdbd;
@@ -328,7 +328,7 @@
     text-align: center;
 }
 #event-section h1{
-    font-size: 12rem;
+    font-size: 8rem;
     color: #f0f1f5;
 }
 #event-section h3{
@@ -336,11 +336,12 @@
     font-weight: bold;
     font-size: 2rem;
     position: relative;
-    bottom: 9rem;
+    bottom: 6.2rem;
+    margin-bottom: 1em;
 }
 #event-section p{
     font-size: 1em;
-    width: 40%;
+    width: 60%;
     margin: auto;
     position: relative;
     bottom: 5rem;
@@ -587,6 +588,119 @@
         position: relative;
         bottom: 3.8rem;
     }
+
+
+    /* count-down-section */
+
+    #count-down{
+        height: 600px;
+        padding:4em 0;
+    }
+    .count{
+        display:unset;
+        gap: 1em;
+    }
+
+
+    /* couses-display-section */
+    #courses-display h1{
+        font-size: 4rem;
+    }
+    #courses-display h3{
+        font-size: 1.5rem;
+        bottom: 3.6rem;
+        margin-bottom: 2em;
+    }
+    #courses-display p{
+        font-size: 1em;
+        width: 90%;
+    }
+
+
+
+    /* carousel-new-section */
+    #carousel-new hr{
+        width: 7%;
+        text-align: start;
+        background: yellow;
+        border-width: .2em;
+    }
+    .carousel-encapsulation{
+        display: unset;
+        width: 90%;
+        padding-left: 2.2em;
+        padding-top: 1em;
+        height: 650px;
+    }
+    #carousel-new .first{
+        font-size: 1em;
+        width: 100%;
+    }
+    
+    #carousel-new .img-new{
+        margin-bottom: 3em;
+    }
+
+
+
+    /* event-section */
+
+    #event-section h1{
+        font-size: 4rem;
+    }
+    #event-section h3{
+        font-size: 1.3rem;
+        bottom: 3.5rem;
+        margin-bottom: 3em;
+    }
+    #event-section p{
+        font-size: 1em;
+        width: 80%;
+        position: relative;
+        bottom: 5rem;
+    }
+
+    /* events-section222 */
+
+
+    .news-events{
+        display: unset;
+    }
+    .caro-all > h4{
+        font-size: 1rem;
+        color: grey;
+        margin-bottom: 2em;
+    }
+    .caro-all{
+        width:90%;
+        margin:0 auto;
+    }
+    .carousel-encap{
+        width:600px;
+        margin:0 1em;
+        margin-bottom: 5em;
+    }
+    .carousel-encap img{
+        width: 600px;
+    }
+    .carousel-text-events h3{
+        font-size: 1.3rem;
+    }
+    .carousel-text-events h5{
+        font-size: 1em;
+    }
+    .carousel-text-events p{
+        font-size: .9em;
+    }
+    .carousel-text-events h6{
+        font-size: 1rem;
+    }
+
+    .noncarousel-text{
+        padding: 0 2em;
+    }
+    
+
 }
 
 
@@ -619,9 +733,32 @@
         margin-top:unset;
         height: unset;
     }
-    .count{
-        display:flex;
+    
+
+    /* count-down-section */
+
+    #count-down{
+        height: 600px;
         text-align: center;
-        gap: 3rem;
+        padding:4em 0;
+    }
+    .count{
+        text-align: unset;
+        gap: 1em;
+    }
+
+
+    /* events-section */
+
+    #event-section h1{
+        font-size: 3rem;
+    }
+    #event-section h3{
+        font-size: 1rem;
+        bottom: 2.8em;
+    }
+    #event-section p{
+        font-size: 1em;
+        width:95%;
     }
 }
