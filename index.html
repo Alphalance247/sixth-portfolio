@@ -18,12 +18,12 @@
     <!-- nav-section -->
     <section id="nav-section">
      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-danger position-static">
+      <nav class="navbar navbar-expand-lg navbar-danger">
             <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto nav-bar-css">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Home</a>
@@ -101,10 +101,12 @@
             <input type="text" placeholder="What area of study would you like to search for">
             <button type="button" class="btn btn-outline-warning"><i class="fas fa-search"></i></button>
     </section>
+
+
+    <!-- section-carousel -->
     <section id="section-carousel">
 
     <div  class="carousel-2" data-flickity='{ "wrapAround": true, "autoPlay": true, "imagesLoaded":true }'>
-        <!-- <div class="carousel-1"> -->
           
             <div class="caro" style="background:url('img/biology_course\ \(2\).jpg');  background-position: center; background-size: cover;">
             <div><h2>Biological</h2></div>
@@ -227,16 +229,20 @@
           </div>
         </div>
       </div>
+    </section>
       <hr>
       <div class="showcase-testimonial">
            <h1>THE BEST</h1>
            <h3>Why choose Diplomia</h3>
-        <!-- <div class="row"></div> -->
+        
         <div class="showcases-testimonial">
           <div class="showcases-testimonial-text">
           <p> <i class="fas fa-check-circle"></i>Sed maximus sodales nulla sollicitudin tincidunt. Donec suscipit urna nec augue.</p>
           <p> <i class="fas fa-check-circle"></i>Sed maximus sodales nulla sollicitudin tincidunt. Donec suscipit urna nec augue.</p>
           <p> <i class="fas fa-check-circle"></i>Sed maximus sodales nulla sollicitudin tincidunt. Donec suscipit urna nec augue.</p>
+        </div>
+
+          <div class="showcases-testimonial-text">
           <p> <i class="fas fa-check-circle"></i>Sed maximus sodales nulla sollicitudin tincidunt. Donec suscipit urna nec augue.</p>
           <p> <i class="fas fa-check-circle"></i>Sed maximus sodales nulla sollicitudin tincidunt. Donec suscipit urna nec augue.</p>
           <p> <i class="fas fa-check-circle"></i>Sed maximus sodales nulla sollicitudin tincidunt. Donec suscipit urna nec augue.</p>
@@ -246,7 +252,6 @@
         </div>
        <button type="button" class="btn btn-primary btn-lg btn-warning btn-cto btn-cta">MORE ABOUT DIPLOMIA</button>
       </div>
-    </section>
     <section id="count-down">
       <div class="count">
        <div class="count-text">
@@ -297,7 +302,7 @@
                       <p>;;</p>
                     </div>
                   <div class="design-text">
-                     <h3>JAMES WARNER</h3>
+                     <h5>JAMES WARNER</h5>
                     <p>Principal at Educorp</p>
                   </div>
                 </div>
@@ -471,6 +476,7 @@
       <div class="contact-btn">
            <div class="btn"><button type="button" class="btn btn-primary btn-lg btn-warning btn-cto btn-cta">CONTACT US</button></div>
            <p>or</p>
+           <div class="call-email">
           <div class="call">
            <p>call</p>
            <p>E-mail</p>
@@ -479,6 +485,7 @@
             <p>+2348140686688</p>
             <p>al.moshood017@gmail.com</p>
           </div>
+        </div>
       </div>
     </div>
   </section>
@@ -532,7 +539,9 @@
      </div>
     </div>
   </div>
+
 </section>
+
     
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

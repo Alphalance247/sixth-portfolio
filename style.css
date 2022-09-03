@@ -1,23 +1,21 @@
 *{
-    margin: 0;
+    margin: auto;
     padding: 0;
+    
 }
 /* nav-section */
-
-
 #nav-section{
-    padding: 1em 10em;
+    /* padding: 1em 10em; */
     background-color: white;
     color: green;
-    position:static;
 }
 
 .nav-bar-css{
-    margin-right: 10em;
+    /* margin-right: 10em; */
     color:green;
 }
 .nav-bar-css > li{
-    margin-right: 2em;
+    margin-right: 1em;
 }
 .nav-bar-css > li > a{
     color: #051977;
@@ -142,13 +140,12 @@
 }
 .showcase{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
     grid-gap:2em;
 }
 .showcase-cover{
     display: grid;
     grid-template-columns:80px auto;
-    box-shadow: 2em white;
     padding:1em 1.5em;
 }
 .showcase-text{
@@ -156,9 +153,10 @@
 }
 .showcase-text h3{
     color: #051952;
+    font-size: 1em;
 }
 .showcase-text p{
-    font-size: 100%;
+    font-size: 80%;
 }
 .showcase-cover:hover{
     color:black;
@@ -168,9 +166,16 @@
 
 
 /* showcase-testimonial */
+
+.showcase-testimonial{
+    width: 90%;
+    margin:auto ;
+    padding-bottom: 3em;
+}
 .showcases-testimonial{
     display: grid;
-    grid-template-columns:auto 300px;
+    grid-template-columns:auto auto 300px;
+    background: url('img/bg-row\ \(1\).png');
 }
 .showcase-testimonial h1{
     font-size: 8rem;
@@ -185,13 +190,7 @@
     position: relative;
     bottom: 6.2rem;
 }
-.showcases-testimonial-text{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    height: 200px;
-    gap: 1em;
-    margin-top: 7em;
-}
+
 .showcases-testimonial-text p{
     font-size: 1em;
 }
@@ -277,12 +276,12 @@
     grid-gap: 5em;
     padding-left: 5em;
     padding-top: 3em;
-    height: 450px;
+    height: 380px;
 }
 #carousel-new .first{
     font-size: 1.3em;
     color: #787878;
-    width: 70%;
+    /* width: 70%; */
 }
 .carousel-new-text h3{
     color: #bdbdbd;
@@ -302,22 +301,26 @@
     background: #051952;
     width: 50px;
     height: 50px;
-    font-size: 3em;
     font-weight: bold;
     color: yellow;
-    text-align: center;
+    text-align:center;
     border-radius: .2rem;
-    margin-bottom: 4em;
+    font-size: 2em;
 }
-.design p{
-    margin-top: -1rem;
+
+.design-text{
+    margin-bottom:  -.7em;
+}
+.design-text h5{
+    color: #031752;
+    font-size: 1em;
 }
 .design-text p{
-    margin-top: -.7em;
+    color: #bdbdbd;
 }
 .new-sect{
-    display: flex;
-    gap: 1em;
+    display: grid;
+    grid-template-columns:10px 300px;
 }
 
 
@@ -328,7 +331,7 @@
     text-align: center;
 }
 #event-section h1{
-    font-size: 8rem;
+    font-size: 6rem;
     color: #f0f1f5;
 }
 #event-section h3{
@@ -336,7 +339,7 @@
     font-weight: bold;
     font-size: 2rem;
     position: relative;
-    bottom: 6.2rem;
+    bottom: 5.3rem;
     margin-bottom: 1em;
 }
 #event-section p{
@@ -465,6 +468,7 @@
     background-position: center;
     height: 380px;
     padding: 4rem 0;
+    background-size: cover;
 }
 .contact{
     text-align: center;
@@ -477,11 +481,11 @@
 }
 .contact h2{
     color: yellow;
-    font-size: 3em;
+    font-size: 2em;
 }
 .contact p{
     color: white;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 .contact .btn-cta{
     color: white;
@@ -565,17 +569,18 @@
      /* showcase-section */
      
     #showcase-section .showcase-testimonial .btn-cta{
-        padding: .7em 2em;
+        padding: .7em 3em;
         margin:unset;
+        margin-left: 2em;
     }
     .showcases-testimonial-text{
         gap: unset;
         margin-top:unset;
         height: unset;
+        padding-left: 2em;
     }
     .showcases-testimonial{
-        display: grid;
-        grid-template-columns:1fr 1fr;
+        display:unset;
     }
     .showcase-testimonial h1{
         font-size: 4rem;
@@ -630,7 +635,7 @@
         width: 90%;
         padding-left: 2.2em;
         padding-top: 1em;
-        height: 650px;
+        height: 670px;
     }
     #carousel-new .first{
         font-size: 1em;
@@ -661,8 +666,6 @@
     }
 
     /* events-section222 */
-
-
     .news-events{
         display: unset;
     }
@@ -674,6 +677,7 @@
     .caro-all{
         width:90%;
         margin:0 auto;
+        overflow: hidden;
     }
     .carousel-encap{
         width:600px;
@@ -699,6 +703,15 @@
     .noncarousel-text{
         padding: 0 2em;
     }
+
+
+
+    /* contact-section */
+    .contact-btn{
+        display:flex;
+        gap: 2em;
+        justify-content: center;
+    }
     
 
 }
@@ -706,6 +719,25 @@
 
 /* small-media-query */
 @media (max-width:500px){
+
+
+    /* jumbotron-setion */
+
+    #jumbotron{
+        height:40rem;
+    }
+    .jumbo{
+        font-size: 3rem;
+        margin-top:3rem ;
+        margin-bottom:3rem ;
+    }
+    .jumbo-p{
+        font-size:1rem;
+    }
+
+    /* hero-section */
+
+    
     .hero-img > img{
         height:300px;
     }
@@ -751,14 +783,89 @@
     /* events-section */
 
     #event-section h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
+        color: #f0f1f5;
     }
     #event-section h3{
-        font-size: 1rem;
-        bottom: 2.8em;
-    }
-    #event-section p{
+        bottom: 2.5rem;
         font-size: 1em;
-        width:95%;
     }
+    
+    .caro-all > h4{
+        margin-left: 2em;
+    }
+    .carousel-encap{
+        width:380px;
+        margin:0 1em;
+        margin-bottom: 5em;
+    }
+    .carousel-encap img{
+        width:380px;
+    }
+
+
+    /* non-carousel-text */
+
+    .noncarousel-text > h4{
+        font-size: 1rem;
+        color: grey;
+        margin-bottom: 2em;
+    }
+    .non-carousel-encap{
+        display:grid;
+        grid-template-columns:auto 1fr;
+        grid-gap: 1em;
+        cursor: pointer;
+    }
+    .non-carousel-encap:hover{
+        background: white;
+        box-shadow:10px 10px 15px 15px rgba(0, 0, 0, 0.1);
+    }
+    .first-text{
+        background: #051952;
+        width: 130px;
+        height: 130px;
+        text-align: center;
+    }
+    .first-text h4{
+        color: white;
+        margin-top: 1em;
+    }
+    .first-text h5{
+        color: goldenrod;
+        font-size: 3em;
+    }
+    .second-text h3{
+        font-weight: bold;
+        font-size: 1rem;
+        color: #051952;
+    }
+    .second-text h3:hover{
+        color: goldenrod;
+    }
+    .second-text p{
+        color: #bdbdbd;
+        font-size: .7em;
+    }
+    .second-text h6{
+        color: goldenrod;
+    }
+    .second-text h6:hover{
+        color: #031752;
+    }
+
+
+    /* cntact-section */
+    #contact-us{
+        padding: 1rem 0;
+    }
+    .contact-btn{
+        display:unset;
+        gap: 2em;
+        justify-content: center;
+    }
+    .call-email{
+        display: flex;
+    }
+    
 }
