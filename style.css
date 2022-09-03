@@ -1,26 +1,24 @@
-*{
+body{
     margin: auto;
     padding: 0;
-    
 }
 /* nav-section */
 #nav-section{
-    /* padding: 1em 10em; */
+    padding: 1em 2em;
     background-color: white;
     color: green;
 }
 
-.nav-bar-css{
-    /* margin-right: 10em; */
+#nav-section .nav-bar-css{
     color:green;
 }
-.nav-bar-css > li{
-    margin-right: 1em;
+#nav-section .nav-bar-css > li{
+    margin-right: 1.3em;
 }
-.nav-bar-css > li > a{
+#nav-section .nav-bar-css > li > a{
     color: #051977;
 }
-.nav-bar-css > li > a:hover{
+#nav-section .nav-bar-css > li > a:hover{
     color: yellow;
 }
 
@@ -320,7 +318,7 @@
 }
 .new-sect{
     display: grid;
-    grid-template-columns:10px 300px;
+    grid-template-columns:80px 400px;
 }
 
 
@@ -737,7 +735,7 @@
 
     /* hero-section */
 
-    
+
     .hero-img > img{
         height:300px;
     }
