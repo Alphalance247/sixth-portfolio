@@ -707,7 +707,7 @@ body{
     /* contact-section */
     .contact-btn{
         display:flex;
-        gap: 2em;
+        gap: 1em;
         justify-content: center;
     }
     
@@ -717,7 +717,13 @@ body{
 
 /* small-media-query */
 @media (max-width:500px){
+      /* nav-section */
 
+      #nav-section{
+        padding:unset;
+        background-color: white;
+        color: green;
+    }
 
     /* jumbotron-setion */
 
@@ -800,7 +806,16 @@ body{
     .carousel-encap img{
         width:380px;
     }
+    /* contact-section */
 
+    #contact-us{
+        margin:3em 0 0;
+        padding: 4rem 0;
+    }
+    .contact h2{
+        color: yellow;
+        font-size: 1.7em;
+    }
 
     /* non-carousel-text */
 
