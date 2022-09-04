@@ -532,7 +532,18 @@ body{
     line-height: 2;
 }
 
+/* foooter-last-section */
 
+#footer-last{
+    background: goldenrod;
+    height: 100px;
+    padding: 2em 4em ;
+    color: #051977;
+}
+.footer-last-last{
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /* tab media query */
@@ -710,6 +721,7 @@ body{
         gap: 1em;
         justify-content: center;
     }
+
     
 
 }
@@ -880,5 +892,10 @@ body{
     .call-email{
         display: flex;
     }
-    
+
+    /* footer-last */
+    .footer-last-last{
+        display:unset;
+        text-align: center;
+    }
 }
